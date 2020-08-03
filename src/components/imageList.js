@@ -8,7 +8,7 @@ const ImageList = (props) => {
     // Similar to componentDidMount and componentDidUpdate:
     useEffect(() => {
         setImages(props.foundImages);
-    });
+    }, [props.foundImages]);
 
     const imgs = foundImages.map(img => {
         return <ImageCard key={img.id} image={img} />

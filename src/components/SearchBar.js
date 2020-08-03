@@ -27,7 +27,7 @@ class SearchBar extends React.Component {
                     />
                     <button className="searchBtn"
                         type="submit">
-                        <img src={searchImg} />
+                        <img src={searchImg} alt="search" />
                     </button>
                 </form>
             </div>

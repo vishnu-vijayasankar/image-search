@@ -23,7 +23,8 @@ class ImageModal extends Component {
                 bottom: 'auto',
                 marginRight: '-50%',
                 transform: 'translate(-50%, -50%)',
-                zIndex: '999'
+                zIndex: '999',
+                border: '2px solid #2bc0c0'
             }
         };
 
@@ -44,8 +45,10 @@ class ImageModal extends Component {
                         x
                 </button>
                 <div>
-                <img style={{ height: '350px', border: '2px solid rgb(255 247 0)' }}
-                    src={this.props.imageSrc}/>
+                <img style={{ height: '350px' }}
+                    src={this.props.imageSrc}
+                    alt="popup"
+                />
                 </div>
             </Modal>
         )
