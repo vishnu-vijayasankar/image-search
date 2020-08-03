@@ -22,7 +22,8 @@ class ImageModal extends Component {
                 right: 'auto',
                 bottom: 'auto',
                 marginRight: '-50%',
-                transform: 'translate(-50%, -50%)'
+                transform: 'translate(-50%, -50%)',
+                zIndex: '999'
             }
         };
 

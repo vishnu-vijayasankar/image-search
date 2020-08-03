@@ -1,5 +1,6 @@
 import React from 'react';
 import './SearchBar.css';
+import searchImg from '../images/searchBtn.png';
 
 class SearchBar extends React.Component {
     state = { val: '' }
@@ -17,13 +18,17 @@ class SearchBar extends React.Component {
         return (
             <div>
                 <form onSubmit={this.onFormSubmit} className="flexContainer">
-                    <label style={{marginRight: '5px'}}><h2>Search for Images: </h2></label>
                     <input
                         className="inputStyle"
                         type="text"
                         value={this.state.val}
                         onChange={this.onInputChange}
+                        placeholder={"Search for images here..."}
                     />
+                    <button className="searchBtn"
+                        type="submit">
+                        <img src={searchImg} />
+                    </button>
                 </form>
             </div>
         )

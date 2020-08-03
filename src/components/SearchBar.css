@@ -1,6 +1,6 @@
 .flexContainer {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: #6e6d6d;
 }
@@ -9,5 +9,31 @@
     font-size: 15px;
 	padding: 3px;
     display: inline-block;
-    width: 30%;
+    width: 40%;
+    height: 35px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding-left: 25px;
+}
+
+.inputStyle:focus {
+    outline: none;
+}
+
+.searchBtn {
+    background: #21d8d8;
+    padding: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.searchBtn:focus {
+    outline: none;
+}
+
+.searchBtn img {
+    height: 20px;
 }

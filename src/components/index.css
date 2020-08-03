@@ -23,6 +23,10 @@
     transition: transform 0.15s;
     transform: translateY(-1px);
   }
+
+  .outerContainer {
+    padding: 100px 150px;
+  }
   
   .pagination-controls li.active {
     background-color: gold;
@@ -37,3 +41,45 @@
     outline: none;
   }
 
+  .loadMoreContainer {
+    text-align: center;
+  }
+
+  .loadMoreBtn {
+    background: #2bc0c0;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+  .loadMoreBtn:focus {
+    outline: none;
+  }
+
+
+  .imageByText {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    bottom: 15px;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    color: white;
+  }
+  
+  .imageByName {
+    font-weight: bold;
+    color: #2bc0c0;
+  }
+
+  .imageByText img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }

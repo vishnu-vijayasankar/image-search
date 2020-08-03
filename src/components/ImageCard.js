@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ImageModal from './imageModal.js';
+import IconPhoto from '../images/DPicon.jpg';
 
 class ImageCard extends Component {
     constructor(props) {
@@ -37,14 +38,19 @@ class ImageCard extends Component {
         console.log(" => Im was clicked", this.state.imageSrc);
         return (
             <div id={this.props.image.id}
-                style={{ gridRowEnd: `span ${this.state.spans}`, padding: '4px 4px 0 4px' }}
+                style={{ gridRowEnd: `span ${this.state.spans}`, padding: '4px 4px 0 4px', position: 'relative' }}
             >
-                <img style={{ border: '2px solid rgb(255 247 0)', cursor: 'pointer' }}
+                <img style={{ cursor: 'pointer', borderRadius: '10px' }}
                     ref={this.imageRef}
                     src={this.props.image.urls.regular}
                     alt={this.props.image.alt_description}
                     onClick={this.handleEvent}
                 />
+                <div className="imageByText">
+                    <span><img src={IconPhoto} alt="DP"/></span>
+                    <span>Image by&nbsp;</span>
+                    <span className="imageByName">John Doe</span>
+                </div>
                 {
                     this.state.modalIsOpen ?
                         <ImageModal
