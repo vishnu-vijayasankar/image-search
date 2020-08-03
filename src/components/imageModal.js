@@ -45,7 +45,7 @@ class ImageModal extends Component {
                         x
                 </button>
                 <div>
-                <img style={{ height: '350px' }}
+                <img style={{ height: '500px' }}
                     src={this.props.imageSrc}
                     alt="popup"
                 />
